@@ -16,3 +16,12 @@ function gc() {
         g commit -m "$*"
     fi
 }
+
+# Format: git@github.com:init-zhang/git.sh.git
+function gc() {
+    if [ -z $2 ]; then
+        g clone git@github.com:init-zhang/$1.git
+    else
+        g clone git@github.com:$1/$2.git
+    fi
+}
