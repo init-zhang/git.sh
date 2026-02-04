@@ -19,7 +19,7 @@ function gc() {
 }
 
 # Format: git@github.com:init-zhang/git.sh.git
-function gc() {
+function gcl() {
     if [ -z $2 ]; then
         g clone git@github.com:init-zhang/$1.git
     else
