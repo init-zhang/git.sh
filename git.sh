@@ -1,6 +1,7 @@
 alias g='git'
 alias gs='g status'
 alias ga='g add'
+alias gaa='g add .'
 alias gl='g log --oneline'
 alias gpl='g pull'
 alias gpu='g push'
