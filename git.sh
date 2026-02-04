@@ -8,5 +8,9 @@ alias gb='g branch'
 alias gch='g checkout'
 
 function gc() {
-    g commit -m "$*"
+    if [ -z "$*" ]; then
+        g commit
+    else
+        g commit -m "$*"
+    fi
 }
