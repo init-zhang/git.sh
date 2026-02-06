@@ -9,6 +9,7 @@ alias gb='g branch'
 alias gch='g checkout'
 alias gr='g remote'
 alias gd='g diff'
+alias gca='g commit --amend'
 
 function gc() {
     if [ -z "$*" ]; then
@@ -26,3 +27,5 @@ function gcl() {
         g clone git@github.com:$1/$2.git
     fi
 }
+
+alias edit-g="vim ${BASH_SOURCE}"
