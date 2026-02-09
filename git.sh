@@ -28,4 +28,8 @@ function gcl() {
     fi
 }
 
+function gcg() {
+    grep-select "$1" "$(gb | cut -c 3-)" "gch"
+}
+
 alias edit-g="vim ${BASH_SOURCE}"
